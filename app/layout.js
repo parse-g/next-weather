@@ -1,13 +1,14 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
-	title: "Next Weather",
-	description: "You can get clothes by weather in this site",
+	title: "Next Погода",
+	description:
+		"Вы можете узнать какую одежду лучше одеть по погоде, на этом сайте.",
 };
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="ru">
 			<body>
 				{children}
 				<Analytics />
