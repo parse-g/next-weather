@@ -15,6 +15,12 @@ export default function WeatherBlock() {
 
 	const [weather, setWeather] = useState();
 
+	const uid = () =>
+		String(Date.now().toString(32) + Math.random().toString(16)).replace(
+			/\./g,
+			""
+		);
+
 	const clothes = {
 		sweater: {
 			name: "Свитер",
@@ -234,7 +240,7 @@ export default function WeatherBlock() {
 								return (
 									<div
 										style={{ border: "1px solid black" }}
-										key={hour.time_epoch}
+										key={uid()}
 									>
 										{hour.time.split(" ")[1]} <br />
 										{hour.condition.text}
