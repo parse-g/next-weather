@@ -217,7 +217,7 @@ export default function WeatherBlock() {
 							weather.forecast.forecastday[0].day["daily_will_it_rain"] === 1,
 							weather.forecast.forecastday[0].day["daily_will_it_snow"] === 1
 						)?.map((obj) => (
-							<p>
+							<p key={uid()}>
 								{obj.name}{" "}
 								{obj?.imageURL !== undefined && (
 									<Image
