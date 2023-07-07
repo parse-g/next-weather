@@ -1,7 +1,53 @@
-.mainSection {
+.weatherCard {
 	padding: 1rem;
-	display: flex;
+	margin: 1rem;
+	display: grid;
+	grid-template:
+		". . main-data . ."
+		". . temperature wind ."
+		". hours hours rises ."
+		". . clothes . .";
+	gap: 0.5rem;
 	justify-content: center;
-	flex-direction: row;
+	align-items: top;
+	border: 1px double rgb(2, 2, 2);
+	padding: 0.5rem;
+}
+.weatherCard div {
+	border: gray 1px dashed;
+}
+
+.mainData {
+	grid-area: main-data;
+	display: inline-flex;
 	align-items: center;
+	padding: 0.25rem;
+}
+.temperatureBlock {
+	grid-area: temperature;
+}
+.rainOrSnowBlock {
+}
+.windBlock {
+	grid-area: wind;
+}
+.risesAndSetsBlock {
+	grid-area: rises;
+}
+.sunRisesBlock {
+}
+.moonRisesBlock {
+}
+.clothesTo {
+	grid-area: clothes;
+}
+
+.weatherByHours {
+	grid-area: hours;
+}
+
+.hours {
+	display: grid;
+	gap: 0.25rem;
+	grid-template-columns: repeat(4, 1fr);
 }
