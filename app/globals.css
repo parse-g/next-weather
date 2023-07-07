@@ -7,6 +7,11 @@
 
 body {
 	font-family: "Montserrat", sans-serif;
+	height: 100%;
+}
+
+.main {
+	flex: 1 auto;
 }
 
 h1,
@@ -16,4 +21,24 @@ h4,
 h5,
 h6 {
 	font-family: "Roboto", sans-serif;
+}
+
+.footer {
+	min-height: 100%;
+	background-color: rgb(206, 206, 206);
+	color: rgb(27, 27, 27);
+	text-align: center;
+}
+
+.footer {
+	padding-top: 0.35rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.footer span {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
 }
